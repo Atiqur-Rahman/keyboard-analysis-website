@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1ab",
+        "name": "Mars Gibson",
+        "price": 50,
+        "img": "./images/player-1.png",
+        "ratings": 4.5,
+        "comments": "All my gaming peripherals are razer products. This is as good of quality as any other razer product at half the price. Low profile so it doesn't hurt your wrist and is very quiet compared to most gaming keyboards."
+    },
+    {
+        "id": "2bc",
+        "name": "Nathan Heads",
+        "price": 80,
+        "img": "./images/player-2.png",
+        "ratings": 4.7,
+        "comments": "This was a huge stepup from my last gaming keyboard. I love the feel of the keys as it's not too loud but also gives a good sound when typing. The lighting is great, but I'm not a fan of the software (is anyone?)."
+    },
+    {
+        "id": "3cd",
+        "name": "Jonathan Cams",
+        "price": 70,
+        "img": "./images/player-3.png",
+        "ratings": 4.6,
+        "comments": "I cannot rate this because I never used it. When I discovered that the wrist pad could not be attached I had to return it because of my particular setup (inside a desk drawer) requires the support. It would have been helpful had they mentioned this or shown a slight gap in the picture between pad and keyboard."
+    },
+    {
+        "id": "4de",
+        "name": "Matthew Hayden",
+        "price": 65,
+        "img": "./images/player-4.png",
+        "ratings": 4.8,
+        "comments": "i loved the design and over all quality but the clicking sounds it makes when you type a key is kind of annoying but mostly you get used to it and now i kind of like the clicky sound but at first you will probably think its to loud also i like how the ramp up to the keyboard is magnetic instead of the usual attaching ones that break easily."
+    },
+    {
+        "id": "5ef",
+        "name": "Alex Hales",
+        "price": 85,
+        "img": "./images/player-5.png",
+        "ratings": 5.0,
+        "comments": "Love this keyboard. I needed a new one and I'm very happy with all the features! I'd recommend it and am looking at other Razer products."
+    },
+    {
+        "id": "6fg",
+        "name": "Ben Hoppkins",
+        "price": 95,
+        "img": "./images/player-6.png",
+        "ratings": 4.4,
+        "comments": "Be advised - this does not support NKRO which means you cannot hit more than 2 buttons at a time. If you're gaming with M&K this simply will not do. But if you are purchasing it for casual/work use it is acceptable for the price. My only real complaint is that the wrist rest is not magnetic."
+    }
+]

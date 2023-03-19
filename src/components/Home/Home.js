@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ReviewDetail from '../ReviewDetail/ReviewDetail';
 
 const Home = () => {
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        fetch('fakeReview.json')
+            .then((res) => res.json())
+            .then((data) => setReviews(data));
+    }, []);
+
     return (
         <div>
             <div className="flex mt-10">
@@ -19,7 +28,10 @@ const Home = () => {
 
             {/* Customer Reviews */}
             <div>
-                <h1 className="text-4xl font-bold flex justify-center mt-28">Customer Reviews(3)</h1>
+                <h1 className="text-4xl font-bold flex justify-center mt-40 mb-16">Customer Reviews(3)</h1>
+                {reviews.map((review) => (
+                    <ReviewDetail key={review.id} review={review}></ReviewDetail>
+                ))}
             </div>
         </div>
     );
