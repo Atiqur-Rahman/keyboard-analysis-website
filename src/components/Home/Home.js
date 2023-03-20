@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import useReview from '../../hooks/useReview';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
 
 const Home = () => {
-    const [reviews, setReviews] = useState([]);
+    const [reviews, setReviews] = useReview();
 
-    useEffect(() => {
-        fetch('fakeReview.json')
-            .then((res) => res.json())
-            .then((data) => setReviews(data));
-    }, []);
+    const navigate = useNavigate();
+
+    const handleSeeAllReview = () => {
+        navigate('/review');
+    };
 
     return (
         <div>
@@ -29,10 +31,16 @@ const Home = () => {
             {/* Customer Reviews */}
             <div>
                 <h1 className="text-4xl font-bold flex justify-center mt-40 mb-16">Customer Reviews(3)</h1>
-                {reviews.map((review) => (
-                    <ReviewDetail key={review.id} review={review}></ReviewDetail>
-                ))}
-                <button className="bg-indigo-700 rounded mx-auto px-28 text-white my-14 flex justify-center">See All Reviews</button>
+                {reviews.map((review) => {
+                    let count = 0;
+                    if (count < 3) {
+                        count = count + 1;
+                        return <ReviewDetail key={review.id} review={review}></ReviewDetail>;
+                    }
+                })}
+                <button onClick={handleSeeAllReview} className="bg-indigo-700 rounded mx-auto px-28 text-white my-14 flex justify-center">
+                    See All Reviews
+                </button>
             </div>
         </div>
     );
