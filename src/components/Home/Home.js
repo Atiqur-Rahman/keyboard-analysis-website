@@ -32,6 +32,7 @@ const Home = () => {
                 {reviews.map((review) => (
                     <ReviewDetail key={review.id} review={review}></ReviewDetail>
                 ))}
+                <button className="bg-indigo-700 rounded mx-auto px-28 text-white my-14 flex justify-center">See All Reviews</button>
             </div>
         </div>
     );

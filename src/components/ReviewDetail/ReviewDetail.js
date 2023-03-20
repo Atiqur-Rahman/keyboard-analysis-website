@@ -12,7 +12,7 @@ const ReviewDetail = (props) => {
             <div>
                 <p>
                     <small>
-                        Ratings: <span className="text-yellow-600">{ratings} stars</span>
+                        Ratings: <span className="text-amber-500 font-medium">{ratings} stars</span>
                     </small>
                 </p>
                 <p className="mt-1">{comments}</p>
