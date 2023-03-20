@@ -31,10 +31,8 @@ const Home = () => {
             {/* Customer Reviews */}
             <div>
                 <h1 className="text-4xl font-bold flex justify-center mt-40 mb-16">Customer Reviews(3)</h1>
-                {reviews.map((review) => {
-                    let count = 0;
+                {reviews.map((review, count) => {
                     if (count < 3) {
-                        count = count + 1;
                         return <ReviewDetail key={review.id} review={review}></ReviewDetail>;
                     }
                 })}
